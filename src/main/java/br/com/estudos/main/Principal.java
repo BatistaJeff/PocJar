@@ -1,6 +1,6 @@
 package br.com.estudos.main;
 
-import br.com.estudos.business.PessoaBusiness;
+import br.com.estudos.business.PessoaJDBC;
 
 public class Principal {
 
@@ -13,10 +13,11 @@ public class Principal {
 			if(length >= 2) {
 				if(args[0].toLowerCase().equals("pessoa")){
 					
-					PessoaBusiness business = new PessoaBusiness();
+					PessoaJDBC business = new PessoaJDBC();
 					business.begin(args);
 				}
 			}
+			
 			
 		else {
 			throw new Exception("Falta parametros");

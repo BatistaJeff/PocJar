@@ -22,7 +22,7 @@ import br.com.estudos.utils.Propriedades;
  * como segundo paramentro. Ele le esse arquivo e persiste no banco. 
  * @author jefferson
  */
-public class PessoaBusiness {
+public class PessoaJDBC {
 	
 	protected Connection conn = null;
 	protected Properties prop = null;
